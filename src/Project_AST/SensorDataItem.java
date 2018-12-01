@@ -43,5 +43,19 @@ public class SensorDataItem {
 	public Double GetProbability(){
 		return this.Probability;
 	}
+	
+	@Override
+	public boolean equals(Object arg0) {
+		SensorDataItem other = (SensorDataItem) arg0;
+
+		if(this.GetId() != other.GetId())
+			return false;
+		if(this.GetName() != other.GetName())
+			return false;
+		if(this.GetProbability() != other.GetProbability())
+			return false;
+		
+		return true;
+	}
 		
 }
