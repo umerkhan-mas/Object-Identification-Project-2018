@@ -53,7 +53,7 @@ public class ClassifierTest {
 	}
 
 	@Test
-	public void GetDataForSingleExclusive() throws Exception {
+	public void ClassifierTestForSingleExclusive() throws Exception {
 
 		// Arrange
 		SensorData sensorData1 = new SensorData();
@@ -93,7 +93,7 @@ public class ClassifierTest {
 	}
 
 	@Test
-	public void GetDataForMultipleExclusive() throws Exception {
+	public void ClassifierTestForMultipleExclusive() throws Exception {
 
 		// Arrange
 		SensorData sensorData1 = new SensorData();
@@ -132,7 +132,7 @@ public class ClassifierTest {
 	}
 
 	@Test
-	public void GetDataForUnion() throws Exception {
+	public void ClassifierTestForUnion() throws Exception {
 
 		// Arrange
 		SensorData sensorData1 = new SensorData();
@@ -166,7 +166,7 @@ public class ClassifierTest {
 	}
 
 	@Test
-	public void GetDataForSingleSensor() throws Exception {
+	public void ClassifierTestForSingleSensor() throws Exception {
 
 		// Arrange
 		SensorData sensorData1 = new SensorData();
@@ -192,7 +192,7 @@ public class ClassifierTest {
 	}
 
 	@Test
-	public void GetDataWithEmptySensorData() throws Exception {
+	public void ClassifierTestWithEmptySensorData() throws Exception {
 
 		// Arrange
 		SensorData sensorData1 = new SensorData();
@@ -233,7 +233,7 @@ public class ClassifierTest {
 	}
 
 	@Test
-	public void GetDataWithEmptySensor() throws Exception {
+	public void ClassifierTestWithEmptySensor() throws Exception {
 
 		// Arrange
 		SensorData sensorData1 = new SensorData();
