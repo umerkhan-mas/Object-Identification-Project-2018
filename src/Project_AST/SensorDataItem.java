@@ -1,15 +1,47 @@
 package Project_AST;
 
 public class SensorDataItem {
-	int ObjectCount;
+	int ObjectId;
 	Double Probability;
 	String ObjectName;
-	public void Get_SensorDataItem(String Name,int Count,Double Prob){
-		this.ObjectCount=Count;
-		this.Probability=Prob;
-		this.ObjectName=Name;
-		System.out.println(this.ObjectName);
+
+	public SensorDataItem() {
 		
+	}
+	public SensorDataItem(String Name,int Id,Double Prob) throws Exception {
+		Set_SensorDataItem(Name, Id, Prob);
+	}
+	
+	public void Set_SensorDataItem(String Name,int Id,Double Prob) throws Exception{
+		this.SetName(Name);
+		this.SetProbability(Prob);
+		this.SetId(Id);
+	}
+	
+	public void SetName(String Name){
+		this.ObjectName = Name;
+	}
+	
+	public String GetName(){
+		return this.ObjectName;
+	}
+	
+	public void SetId(int Id){
+		this.ObjectId = Id;
+	}
+	
+	public int GetId(){
+		return this.ObjectId;
+	}
+	
+	public void SetProbability(Double Probability) throws Exception{
+		if(Probability > 100 || Probability < 0)
+			throw new Exception("Invalid Probability provided : " + Probability);		
+		this.Probability = Probability;
+	}
+	
+	public Double GetProbability(){
+		return this.Probability;
 	}
 		
 }
