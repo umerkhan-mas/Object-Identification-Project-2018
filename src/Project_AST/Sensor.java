@@ -7,5 +7,9 @@ public class Sensor {
 	public void Add_SensorData(SensorData SensorData_){
 		listOfSensorData.add(SensorData_);
 	}
+	public int getSensorDataSize(){
+		return this.listOfSensorData.size();
+		
+	}
 }
 

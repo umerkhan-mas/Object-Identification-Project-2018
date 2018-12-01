@@ -24,4 +24,9 @@ public class SensorData {
 		
 		
 	}
+	
+	public int getSensorDataItemSize(){
+		return this.listOfSensorDataItem.size();
+		
+	}
 }
