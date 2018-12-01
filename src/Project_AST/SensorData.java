@@ -17,7 +17,7 @@ public class SensorData {
 			return false;
 		
 		for(int i=0; i<listOfSensorDataItem.size(); i++)
-			if(this.listOfSensorDataItem.get(i) != other.listOfSensorDataItem.get(i))
+			if(!this.listOfSensorDataItem.get(i).equals(other.listOfSensorDataItem.get(i)))
 				return false;
 		
 		return true;
@@ -25,8 +25,28 @@ public class SensorData {
 		
 	}
 	
-	public int getSensorDataItemSize(){
-		return this.listOfSensorDataItem.size();
-		
+	public int size(){
+		return this.listOfSensorDataItem.size();		
 	}
+	
+	public SensorDataItem GetSensorDataItemAt(int index){
+		return listOfSensorDataItem.get(index);
+	}
+	
+	public boolean ContainsId(int objectId){
+		for(int i=0; i<size(); i++){
+			if(GetSensorDataItemAt(i).GetId() == objectId)
+				return true;
+		}
+		return false;
+	}
+	
+	public SensorDataItem GetSensorDataItemWithId(int id){
+		for(int i=0; i<size(); i++){
+			if(GetSensorDataItemAt(i).GetId() == id)
+				return GetSensorDataItemAt(i);
+		}
+		return null;
+	}
+	
 }

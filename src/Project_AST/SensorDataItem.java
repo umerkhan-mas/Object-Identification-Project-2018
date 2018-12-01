@@ -50,9 +50,9 @@ public class SensorDataItem {
 
 		if(this.GetId() != other.GetId())
 			return false;
-		if(this.GetName() != other.GetName())
+		if(!this.GetName().equals(other.GetName()))
 			return false;
-		if(this.GetProbability() != other.GetProbability())
+		if(!this.GetProbability().equals(other.GetProbability()))
 			return false;
 		
 		return true;
