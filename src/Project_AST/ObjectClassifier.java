@@ -2,7 +2,7 @@ package Project_AST;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class ObjectClassifier {
+public class ObjectClassifier implements IClassify {
 	
 	public SensorData Classify(Sensor sensors){
 		ArrayList<Integer> UniqueList= UniqueData(sensors);
