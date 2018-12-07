@@ -477,8 +477,8 @@ public class ClassifierTest {
 		SensorData ActualResult = null;
 		SensorData ExpectedResult =new SensorData() ;
 		ExpectedResult.Add_SensorDataItem(new SensorDataItem("knife", 1, 99.));
-		ExpectedResult.Add_SensorDataItem(new SensorDataItem("scissor", 2, 95.));
-		ExpectedResult.Add_SensorDataItem(new SensorDataItem("fork", 3, 99.));
+		ExpectedResult.Add_SensorDataItem(new SensorDataItem("scissor", 2, 65.));
+		ExpectedResult.Add_SensorDataItem(new SensorDataItem("spoon", 3, 33.));
 		
 		
 		//Act
