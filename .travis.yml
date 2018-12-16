@@ -7,7 +7,7 @@ sudo: false
 script: ant build; ant ClassifierTest;
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -f "junit/TEST-Tests.ClassifierTest$
+  - bash <(curl -s https://codecov.io/bash) -f "junit/TEST-Tests.ClassifierTest"
 
 
 
