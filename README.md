@@ -30,3 +30,9 @@ In order to support Agile and TDD, test cases have been placed for ObjectClassif
 Master: ![](https://travis-ci.com/umerkhan-mas/Object-Identification-Project-2018.svg?branch=master)
 
 Dev: ![](https://travis-ci.com/umerkhan-mas/Object-Identification-Project-2018.svg?branch=dev)
+
+# Test Coverage
+
+Master: [![codecov](https://codecov.io/gh/umerkhan-mas/Object-Identification-Project-2018/branch/master/graph/badge.svg)](https://codecov.io/gh/umerkhan-mas/Object-Identification-Project-2018)
+
+
